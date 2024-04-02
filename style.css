@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+    color:white;
+    width: 90%;
+    padding: 30px;
+}
+.profile{
+    width: 50%;
+    height: 600px;
+    background: url(fotos/perfil.jpg) no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    border-radius: 40px;
+}
