@@ -35,29 +35,26 @@
         <section class="textos">
             <h1>
                 Jasminie Pereira
-                <span style="color: #ee0b0b; text-decoration:underline;">Desenvolvedora</span>
-            </h1>
+               
+            </h1> <h2 style="color: #ee710a; text-decoration:underline;">Desenvolvedora</h2>
 
-            <span>Capacidades</span>
-            <ul>
-                <li>Desenvolvedor Full stack</li>
-                <li>Desenvolvedor de redes neurais</li>
-                <li>Desenvolvedor mobiles</li>
+            <h3>Capacidades</h3>
+            <ul id="capacidades">
+                <li>Desenvolvedor <span style="color: #ee710a;">Full stack</span> </li>
+                <li>Desenvolvedor de <span style="color: #ee710a;">redes neurais</span></li>
+                <li>Desenvolvedor <span style="color: #ee710a;">mobile</span> </li>
             </ul>
         </section>
         <section>
-            <div>
-                <div class="card">
-                    <div class="bg">
-                        <img src="fotos/aplicaçãweb.jpg" alt="">
-                        <img src="fotos/site2.jpg" alt="">
-                        <img src="fotos/site1.jpg" alt="">
-                    </div>
-                    <div class="blob"></div>
+            <div class="carrossel-container">
+                <div class="carrossel" id="carrossel">
+                    <img class="slide" src="fotos/site5.jpg" alt="Slide 1">
+                    <img class="slide" src="fotos/site2.jpg" alt="Slide 2">
+                    <img class="slide" src="fotos/site4.jpg" alt="Slide 3">
                 </div>
             </div>
             <div class="btn-group">
-                <button>Meus projetos</button>
+                <button onclick="setInterval(transform,5000)">Meus projetos</button>
                 <button>Sobre mim</button>
                 <button>Vamos trabalhar juntos</button>
             </div>
@@ -65,5 +62,6 @@
         
     </main>
 
+    <script src="script.js"></script>
 </body>
 </html>
