@@ -54,12 +54,18 @@
                 </div>
             </div>
             <div class="btn-group">
-                <button onclick="setInterval(transform,5000)">Meus projetos</button>
-                <button>Sobre mim</button>
-                <button>Vamos trabalhar juntos</button>
+                <button id="stop"  onclick="parar()" style="display: none;" class="btn">parar slide</button>
+                <button id="start" class="btn" >Meus projetos</button>
+                <button class="btn" onclick="scrollToSection()">Sobre mim</button>
+                <button class="btn">Vamos trabalhar juntos</button>
+                
             </div>
         </section>
-        
+        <section id="sobre">
+            <img src="fotos/sobre.jpg" alt="">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad laboriosam quod accusantium tenetur natus minima. Nulla, facere asperiores temporibus fugit deserunt saepe dolores architecto magnam impedit ullam totam consequatur laboriosam Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic inventore tenetur, neque suscipit repellat saepe consequuntur, a ipsa voluptatum nobis laborum libero. Quibusdam soluta at velit esse, impedit ipsam consequuntur Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut ratione cupiditate repellendus? Esse cupiditate at itaque omnis? Soluta doloribus iure possimus dolorem! Modi, unde enim consequuntur omnis suscipit nam quo. lorem
+            </span>
+        </section>
     </main>
 
     <script src="script.js"></script>
