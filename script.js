@@ -34,7 +34,7 @@ function transform(){
 
 start.addEventListener("click", ()=>{
     if (!interval) {
-        interval = setInterval(transform, 3000);
+        interval = setInterval(transform, 2500);
     }
     start.style.display = "none"
     stop.style.display ="block"

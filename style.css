@@ -38,7 +38,7 @@ header{
 .textos h1{
     font-family: "Dela Gothic One", sans-serif;
     color: white;
-    opacity: 90%;
+    opacity: 100%;
     text-shadow: 0 0 5px rgba(2, 2, 2, 0.411);
 
 }
@@ -229,16 +229,92 @@ main .textos h3{
 
 
 
-@media (min-width: 1200px) {
-    .profile{
-    width: 50%;
+@media (min-width: 1024px) {
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+  body{
+    width: 70%;
+  }
+  header{
+    flex-direction: row;
+    gap: 10px;
+  }
+  .textos{
+    gap: 30px;
+    width: 40%;
     height: 600px;
+    text-align: start;
+  }
+  main .textos{
+    margin-top: 0;
+  }
+  .textos h1{
+    font-size: 80px;
+    font-family: "Cinzel", serif;
+   
+    letter-spacing: 0.2cap;
+  }
+  .textos span{
+    font-size: 20px;
+  }
+  .textos nav{
+    justify-content: space-between;
+  }
+  .textos nav img{
+    width: 55px;
+    transition: all 500ms;
+    
+  }
+  .textos nav img:hover{
+    transform: scale(1.2);
+  }
+
+  #instagram:hover{
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 145, 1, 0.644);
+  }
+  #git:hover{
+   
+    box-shadow: 0 0 20px rgb(252, 252, 252);
+  }
+  #linkedin:hover{
+    box-shadow: 0 0 20px rgb(13, 85, 219);
+  }
+
+  main{
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .slideshow{
+    margin-top:10%;
+    margin-right: 7.8%;
+    width: 55%;
+  }
+  .carrossel{
+  height: 400px;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+  }
+  .slide{
+    height: 400px;
+  }
+  
+  .profile{
+    width: 40%;
+    height: 500px;
     background: url(fotos/perfil.jpg) no-repeat;
     background-size: cover;
     background-position: 100% 100%;
     border-radius: 40px;
-}
-    .profile>img{
-        display: none;
-    };
+    margin-right: 10%;
+  }
+  .profile>img{
+      display: none;
+  };
 }
