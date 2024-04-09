@@ -25,9 +25,9 @@ function transform(){
         counter = 0
     };
     
-        slides[0].style.transform = "translateY("+350 * -counter+"px)"
-        slides[1].style.transform = "translateY("+350 * -counter+"px)"
-        slides[2].style.transform = "translateY("+350 * -counter+"px)"
+        slides[0].style.transform = "translateY("+400 * -counter+"px)"
+        slides[1].style.transform = "translateY("+400 * -counter+"px)"
+        slides[2].style.transform = "translateY("+400 * -counter+"px)"
 
 }
 
@@ -56,4 +56,7 @@ function scrollToSection() {
         section.scrollIntoView({ behavior: 'smooth' });
     }
 }
-   
+function redirecionar() {
+    // Redireciona o usuário para a página especificada
+    window.location.href = "https://github.com/litllev";
+}

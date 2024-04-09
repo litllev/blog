@@ -4,6 +4,7 @@ body{
     width: 90%;
     margin: 3px auto;
     text-align: center;
+    margin-bottom: 100px ;
 }
 
 header{
@@ -33,7 +34,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap:20px;
+    gap: 20px;
 }
 .textos h1{
     font-family: "Dela Gothic One", sans-serif;
@@ -42,28 +43,34 @@ header{
     text-shadow: 0 0 5px rgba(2, 2, 2, 0.411);
 
 }
+
 .textos span{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
+
 .textos nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     align-content: center;
 }
+
 .textos nav img{
     width: 50px;
 }
+
 main{
   width: 100%;
   margin: 0 6.2%;
 
 }
+
 main section{
   width: 90%;
   padding: 0;
 }
+
 main .textos{
   margin-top: 30px;
   text-align: start;
@@ -88,11 +95,13 @@ main .textos h2{
   font-weight:bold;
   margin-bottom:8px ;
 }
+
 main .textos h3{
   margin-top: 0;
   font-size:x-large;
   font-weight:lighter;
 }
+
 #capacidades{
   font-size: larger;
   margin-top: 0;
@@ -180,14 +189,15 @@ main .textos h3{
 #sobre{
   display: none;
   opacity: 0;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Box shadow */
+  box-shadow: 0 0 10px rgba(58, 57, 57, 0.1); /* Box shadow */
   transition: opacity .5s ease, transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 #sobre.show {
   margin-top: 60px; 
   padding: 20px;
-  width: 83%;
+  width: 100%;
+  background-color: rgb(41, 41, 41);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -217,48 +227,53 @@ main .textos h3{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
   body{
     width: 70%;
   }
+
   header{
     flex-direction: row;
     gap: 10px;
   }
+
+  .profile{
+    width: 40%;
+    height: 500px;
+    background: url(fotos/perfil.jpg) no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    border-radius: 40px;
+    margin-right: 10%;
+  }
+  .profile>img{
+      display: none;
+  }
+
   .textos{
     gap: 30px;
     width: 40%;
     height: 600px;
     text-align: start;
   }
-  main .textos{
-    margin-top: 0;
-  }
+
   .textos h1{
     font-size: 80px;
     font-family: "Cinzel", serif;
    
     letter-spacing: 0.2cap;
   }
+
   .textos span{
     font-size: 20px;
   }
+
   .textos nav{
     justify-content: space-between;
   }
+
   .textos nav img{
     width: 55px;
     transition: all 500ms;
@@ -272,10 +287,12 @@ main .textos h3{
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(255, 145, 1, 0.644);
   }
+
   #git:hover{
    
     box-shadow: 0 0 20px rgb(252, 252, 252);
   }
+
   #linkedin:hover{
     box-shadow: 0 0 20px rgb(13, 85, 219);
   }
@@ -289,6 +306,13 @@ main .textos h3{
     justify-content: space-between;
   }
 
+  main .textos{
+    margin-top: 0;
+  }
+  #capacidades{
+    font-size: 26px;
+  }
+  
   .slideshow{
     margin-top:10%;
     margin-right: 7.8%;
@@ -304,17 +328,58 @@ main .textos h3{
   .slide{
     height: 400px;
   }
-  
-  .profile{
-    width: 40%;
-    height: 500px;
-    background: url(fotos/perfil.jpg) no-repeat;
-    background-size: cover;
-    background-position: 100% 100%;
-    border-radius: 40px;
-    margin-right: 10%;
+ 
+  main .sobre{
+    width: 90%;
+    margin: 20px, 10px;
+    position: absolute;
+    top: 130%;
   }
-  .profile>img{
-      display: none;
-  };
+  #sobre.show{
+    width: 70%;
+  }
+
 }
+
+@media screen and (min-width:768px) and (max-width:1024px){
+  .textos h1{
+    font-size: 60px;
+  }
+  #sobre.show{
+    width: 100%;
+  }
+  
+
+}
+
+@media screen and (min-width:1024px) and (max-width:1290px){
+  body{
+    width: 100%;
+    margin: 10px 30px;
+  }
+  .textos h1{
+    font-size: 70px;
+  }
+  #capacidades{
+    font-size: 20px;
+  }
+  .slideshow{
+    width: 50%;
+  }
+  #sobre.show{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:1291px) and (max-width:1670px){
+  .textos h1{
+    font-size: 78px;
+  }
+  body{
+    width: 90%;
+  }
+  #sobre.show{
+    width: 90%;
+  }
+}
+
